@@ -32,7 +32,15 @@
   </nav>
   <script>
     if(sessionStorage.getItem("uid")){
-        $("#login, #mypage, logout").toggle();
+        $("#login, #mypage, #logout").toggle();
         $("#mypage a").html(sessionStorage.getItem("uid"));
     }
+
+    $("#logout").on("click", "a", function(e){
+        e.preventDefault(); //이동하지말라
+        if(confirm("로그아웃 하시겠습니까?")){
+            sessionStorage.clear(); //로그아웃
+            location.href="/"; //루트로 돌아감
+        }
+    });
   </script>

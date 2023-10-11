@@ -1,23 +1,28 @@
-<style>
+<!-- <style> 공용으로 쓸거면 style.css에 넣기
     form span{
         width: 100px; 
         justify-content: center; 
     }
-</style>
+</style> -->
 
 <div class="my-5 row justify-content-center mx-3"> <!--화면 중간/ mx 여백-->
     <h1 class="text-center">로그인</h1>
-    <form name="frm" class="col-md-6 card p-3"> <!--card id, ps를 칸 안에-->
-        <div class="input-group mb-3"> <!--마진 3-->
-            <span class="input-group-text">아이디</span>
-            <input name="uid" class="form-control">
+    <div class="col-md-6 card p-3"> <!--card id, ps를 칸 안에-->
+        <form name="frm">
+            <div class="input-group mb-3"> <!--마진 3-->
+                <span class="input-group-text">아이디</span>
+                <input name="uid" class="form-control">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text">비밀번호</span>
+                <input name="upass" class="form-control" type="password">
+            </div>
+            <button class="btn btn-primary w-100">로그인</button>
+        </form>
+        <div class="text-end">
+            <a href="/users/insert">회원가입</a>
         </div>
-        <div class="input-group mb-3">
-            <span class="input-group-text">비밀번호</span>
-            <input name="upass" class="form-control" type="password">
-        </div>
-        <button class="btn btn-primary">로그인</button>
-    </form>
+    </div>
 </div>
 
 <script>
