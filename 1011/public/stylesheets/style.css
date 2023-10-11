@@ -5,3 +5,8 @@
   font-family: 'Nanum Pen Script', cursive;
   font-family: 'Sunflower', sans-serif;
 }
+
+form span{
+  width: 100px; 
+  justify-content: center;
+}
