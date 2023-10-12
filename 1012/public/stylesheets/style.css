@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Nanum+Pen+Script&family=Sunflower:wght@300&display=swap');
+
+* {
+  font-family: 'Gamja Flower', sans-serif;
+  font-family: 'Nanum Pen Script', cursive;
+  font-family: 'Sunflower', sans-serif;
+}
+
+form span{
+  width: 100px; 
+  justify-content: center;
+}
+.photo{
+  border-radius: 50%;
+  border: 2px solid rebeccapurple;
+}
